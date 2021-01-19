@@ -1,4 +1,5 @@
 from pydataset import data
+import pandas as pd
 
 # data('iris', show_doc=True)
 
@@ -8,4 +9,9 @@ def get_iris_doc():
     return data('iris', show_doc=True)
 
 def get_iris_data():
-    return data('iris')
+    iris_df = data('iris')
+    return iris_df
+
+def get_data(dataset):
+    df = data(dataset)
+    return df
